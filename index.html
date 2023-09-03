@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>RAME</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">R A M E</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a id="no-hover" href="#Inicio" onclick="seleccionar()">SOBRE NOSOTROS</a></li>
+                    <li><a id="no-hover" href="#servicios" onclick="seleccionar()">SERVICIOS</a></li>
+                    <li><a id="no-hover" href="#contactos" onclick="seleccionar()">CONTACTO</a></li>
+                    <li><a id="no-hover" href="RAME/Reserva.html" class="button" onclick="seleccionar()"><span>RESERVA YA!!</span></a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()"><i class="fa-solid fa-bars"></i></div>
+        </header>
+    </div>
+
+    <section id="Inicio" class="Inicio">
+        <div class="contenedor-banner">
+            <div class="col">
+                <img src="img/LogTrans.png">
+            </div>
+            <div class="col">
+                <h1>BIENVENIDOS A RAME</h1>
+                <h4>Nosotros somos un negocio de alquileres de cuartos, nuetros principal enfoque es el hospedaje 
+                    contamos con diversos cuartos asi como una cierta varidad de tarifas tanto como para estudiantes,
+                    trabajadores o personas que busquen un lugar donde vivir.</h4>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicios" class="servicios">
+        <div class="contenedor-servicios">
+            <h2>SERVICIOS</h2>
+            <div class="galeria">
+                <div class="servicio">
+                    <h3>BASICOS</h3>
+                    <img src="img/idea.png" alt="">
+                    <p>Te ofrecemos todos los servicios
+                    basicos como luz, agua y internet 
+                    durante todo el dia.
+                    </p>
+                </div>
+                <div class="servicio">
+                    <h3>LIMPIEZA</h3>
+                    <img src="img/limpieza.png" alt="">
+                    <p>Nosotros nos encargamos de la limpieza
+                    del exterior del dormitorio.
+                    </p>
+                </div>
+                <div class="servicio">
+                    <h3>TECNICOS</h3>
+                    <img src="img/tecnico.png" alt="">
+                    <p>Nosotros nos encargaremos de soluccionar
+                        problemas que pueden presentarce posterior
+                        a la entrega del cuarto esto aplicara en los 
+                        primeros meses.
+                    </p>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contactos" class="contactos">
+        <div class="contenedor-contactos">
+            <h2>CONTACTOS</h2>
+            <div class="fila">
+                <div class="col">
+                    <form action="https://formsubmit.co/alquileresrame@gmail.com" method="POST">
+                        <input type="text" placeholder="Tú Nombre" name="Nombre" required>
+                        <input type="text" placeholder="Numero Telefonico" name="Telefono" required>
+                        <input type="email" placeholder="Dirección de correo" name="Correo" required>
+                        <input type="text" placeholder="Tema" name="Tema" required>
+                        <textarea name="Mensaje" id="" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+                        <button>
+                            <span class="glowing-word">ENVIAR MENSAJE</span><span class="faulty-letter"><i class="fa-solid fa-paper-plane"></i></span>
+                        </button>
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/#contactos">
+                        <input type="hidden" name="_captcha" value="false">
+                    </form>
+                </div>
+                <div class="col">
+                    <img src="img/ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                <label id="a">Las Hormigas Mz A Lt 24, La Molina</label>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                <label id="b"> Llamanos: (01)3484414</label>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                <label id="c">Email: alquileresrame@gmail.com</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
