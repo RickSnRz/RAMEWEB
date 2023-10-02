@@ -64,11 +64,11 @@ html{
     transition-delay: 1.5s;
     color: #fff;
     font-weight: bold;
-    box-shadow: 0 0 10px #252A2E,
-    0 0 20px #252A2E,
-    0 0 40px #252A2E,
-    0 0 80px #252A2E,
-    0 0 160px #252A2E;
+    box-shadow: 0 0 10px var(--glow-color),
+    0 0 20px var(--glow-color),
+    0 0 40px var(--glow-color),
+    0 0 80px var(--glow-color),
+    0 0 160px var(--glow-color);
 }
 .contenedor-header header nav ul li .button span{
     position: relative;
